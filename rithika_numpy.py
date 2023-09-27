@@ -30,3 +30,71 @@ print(x,type(x))
 
 x='c'
 print(x,type(x))
+
+"""**27/09/2023(wed)**
+
+**lab2**
+"""
+
+L=[1,2,3]
+it=iter(L)
+it
+
+A=[1,2,3]
+a=iter(A)
+a
+
+type(L)
+
+next(it)
+
+it._next_()
+
+for i in iter(L):
+  print(i)
+
+for i in L:
+  print(i)
+
+L=[1,2,3]
+iterator=iter(L)
+t=tuple(iterator)
+type(t)
+
+L=[1,2,3]
+iterator=iter(L)
+a,b=iterator
+a,b
+
+m={'Jan' : 1, 'Feb' : 2, 'Mar' : 3,'Apr' : 4,'May' : 5,'Jun' : 6,'Jul' : 7,'Aug' : 8,'Sep' : 9,'Oct' : 10,'Nov' : 11,'Dec' : 12}
+for key in m:
+  print(key,m[key])
+
+l=[1,2,3]
+[2*i for i in l]
+
+l=[1,2,3]
+for i in l:
+  x=2*i
+  print(x)
+
+L=[('Italy', 'Rome'),('France','Paris'),('US','Washington DC')]
+dict(iter(L))
+
+type(L)
+
+t=dict(iter(L))
+type(t)
+
+line_list=[' Presidency University\n', ' Computer Science Department\n', ' Dept Of CSE \n', ' \n']
+stripped_iter=(line.strip() for line in line_list)
+stripped_iter
+
+print(stripped_iter)
+
+line_list=[' Presidency University\n', ' Computer Science Department\n', ' Dept Of CSE \n', ' \n']
+stripped_list=(line.strip() for line in line_list)
+print(stripped_list)
+
+stripped_list=(line.strip() for line in line_list if line !=" ")
+print(stripped_list)
